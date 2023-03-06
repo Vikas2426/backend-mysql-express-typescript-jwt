@@ -1,7 +1,5 @@
 # backend-mysql-express-typescript-jwt
 
-# Project Name
-
 This is a backend project built in Typescript, Express, MySQL, and JWT that runs on port 3000.
 
 ## Getting Started
