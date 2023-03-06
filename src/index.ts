@@ -1,13 +1,14 @@
 import * as dotenv from 'dotenv';
+import express from 'express';
+
 dotenv.config();
-import express from "express";
 const app = express();
-const PORT = process.env.PORT;
+const { PORT } = process.env;
 
 app.get('/', (req, res)=>{
     res.status(200);
-    res.send(`🚀 running 🔥`);
-})
+    res.send('🚀 running 🔥');
+});
 app.listen(PORT, ()=>{
     console.log(`🚀 Listening on port ${PORT}\n open 🔗 http://localhost:${PORT} 🔗`);
 });

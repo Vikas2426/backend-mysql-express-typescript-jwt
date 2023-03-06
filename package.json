@@ -8,12 +8,7 @@
     "start": "node ./build/index.js",
     "build": "tsc -p",
     "dev": "nodemon ./src/index.ts",
-    "lint": "eslint src/**/*.ts",
-    "lint-fix": "eslint --fix src/**/*.ts",
-    "pretty": "prettier --write 'src/**/*.ts'",
-    "prepare": "husky install",
-    "precommit": "npm run lint-fix && npm run pretty",
-    "prepush": "npm run lint"
+    "pretty-lint": "eslint --fix src/*.ts src/**/*.ts | prettier --write 'src/**/*.ts'"
   },
   "repository": {
     "type": "git",
@@ -44,7 +39,8 @@
     "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.35.0",
     "eslint-config-airbnb": "^19.0.4",
-    "husky": "^8.0.3",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "nodemon": "^2.0.21",
     "prettier": "^2.8.4",
     "tsc-node": "^0.0.3",
