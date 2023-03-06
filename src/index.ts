@@ -9,5 +9,5 @@ app.get('/', (req, res)=>{
     res.send(`🚀 running 🔥`);
 })
 app.listen(PORT, ()=>{
-    console.log(`🚀  Listening on port ${PORT}\n open 🔗 http://localhost:${PORT} 🔗`);
+    console.log(`🚀 Listening on port ${PORT}\n open 🔗 http://localhost:${PORT} 🔗`);
 });
