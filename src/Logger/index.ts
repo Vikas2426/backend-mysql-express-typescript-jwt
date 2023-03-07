@@ -13,7 +13,7 @@ const logger = createLogger({
     format: _format.combine(
         _format.colorize(),
         _format.timestamp({ format: 'YY-MM-DD / HH:MM:SS' }),
-        _format.printf(info => `######\n ${info.timestamp} ${info.level}: ${info.message}\n##### `)
+        _format.printf(info => `######\n [${info.timestamp}] [${info.level}]: ${info.message}\n##### `)
       ),
 });
 
