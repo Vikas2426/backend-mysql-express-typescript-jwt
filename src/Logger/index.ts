@@ -3,7 +3,6 @@ import { createLogger, format as _format, transports as _transports } from 'wins
 const logger = createLogger({
     level: 'debug',
     transports: [
-    
         new _transports.Console(),
         new _transports.File({ filename: 'debug.log', level: 'debug' }),
         new _transports.File({ filename: 'error.log', level: 'error' }),
